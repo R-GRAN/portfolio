@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rémy Grangenois | Portfolio - Développeur Web</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,10 +18,10 @@
       <header>
         <span>Rémy Grangenois</span>
         <nav>
-          <a href="">Home</a>
+          <a href="#presentation">Présentation</a>
           <a href="#skills">Compétences</a>
           <a href="">Portfolio</a>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
       <div class="banner">
@@ -23,12 +30,29 @@
           alt="bannière"
           class="banner-background"
         />
-        <div class="banner-presentation">
+        <div class="banner-introduction">
           <h1>Hello, je suis Rémy</h1>
           <p>Web Devellopeur Junior</p>
         </div>
       </div>
     </div>
+
+    <section id="presentation">
+      <h3>Qui suis-je ?</h3>
+      <div class="presentation-details">
+        <img src="./assets/images/mini-nina.webp" alt="photo test" />
+        <p>
+          "Suite à mon désir de reconversion dans le monde du développement web
+          puis à sa concrétisation en me formant grâce à OpenClassrooms, j'ai pu
+          acquérir de nombreuses compétences que je souhaite désormais exploiter
+          en créant des sites et applications web . Découvrir, apprendre,
+          maîtriser, créer, partager, tels sont mes objectifs. Je vous invite à
+          jeter un oeil aux projets que j'ai pu réaliser dans le cadre de ma
+          formation de Développeur Web chez OpenClassrooms, ainsi qu'aux
+          compétences que j'ai acquises suite à cette formation."
+        </p>
+      </div>
+    </section>
 
     <section class="skills" id="skills">
       <h3>Mes compétences</h3>
@@ -69,11 +93,11 @@
 
     <section class="contact" id="contact">
       <h3>Contact</h3>
-      <div>
+      <p>
         Une question ? N'hesitez pas à m'écrire ! Je voux repondrais en moins de
         24h. À très bientôt !
-      </div>
-
+      </p>
+      <i class="fa-regular fa-envelope"></i>
       <a href="mailto:remy.grangenois@gmail.com">remy.grangenois@gmail.com</a>
     </section>
 
