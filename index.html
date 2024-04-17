@@ -2,20 +2,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rémy GRANGENOIS | Portfolio - Développeur Web</title>
+    <title>Rémy Grangenois | Portfolio - Développeur Web</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Rémy GRANGENOIS</h1>
-      <nav>
-        <a href="">Home</a>
-        <a href="">Compêtences</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
-      </nav>
-    </header>
+    <div class="header-container">
+      <header>
+        <span>Rémy Grangenois</span>
+        <nav>
+          <a href="">Home</a>
+          <a href="#skills">Compétences</a>
+          <a href="">Portfolio</a>
+          <a href="">Contact</a>
+        </nav>
+      </header>
+      <div class="banner">
+        <img
+          src="./assets/images/mac_open.jpg"
+          alt="bannière"
+          class="banner-background"
+        />
+        <div class="banner-presentation">
+          <h1>Hello, je suis Rémy</h1>
+          <p>Web Devellopeur Junior</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="skills" id="skills">
+      <h3>Mes compétences</h3>
+      <div class="skills-lists">
+        <article>
+          <h4>Design</h4>
+          <ul>
+            <li>Figma</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Front-end</h4>
+          <ul>
+            <li>Html5</li>
+            <li>Css</li>
+            <li>React</li>
+            <li>Sass</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Back-end</h4>
+          <ul>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Outils</h4>
+          <ul>
+            <li>VS Code</li>
+            <li>Github</li>
+            <li>Postman</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3>Contact</h3>
+      <div>
+        Une question ? N'hesitez pas à m'écrire ! Je voux repondrais en moins de
+        24h. À très bientôt !
+      </div>
+
+      <a href="mailto:remy.grangenois@gmail.com">remy.grangenois@gmail.com</a>
+    </section>
 
     <footer>© 2024 - Rémy GRANGENOIS</footer>
   </body>
