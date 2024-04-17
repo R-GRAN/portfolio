@@ -14,26 +14,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header-container">
-      <header>
-        <span>Rémy Grangenois</span>
-        <nav>
-          <a href="#presentation">Présentation</a>
-          <a href="#skills">Compétences</a>
-          <a href="">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-      <div class="banner">
-        <img
-          src="./assets/images/mac_open.jpg"
-          alt="bannière"
-          class="banner-background"
-        />
-        <div class="banner-introduction">
-          <h1>Hello, je suis Rémy</h1>
-          <p>Web Devellopeur Junior</p>
-        </div>
+    <header>
+      <span>Rémy Grangenois</span>
+      <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <img
+        src="./assets/images/mac_open.jpg"
+        alt="bannière"
+        class="banner-background"
+      />
+      <div class="banner-introduction">
+        <h1>Hello, je suis Rémy</h1>
+        <p>Web Devellopeur Junior</p>
       </div>
     </div>
 
@@ -91,10 +90,68 @@
       </div>
     </section>
 
+    <section class="portfolio" id="portfolio">
+      <h3>Portfolio</h3>
+      <article>
+        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
+        <div class="project-block">
+          <div class="project-title">
+            <h4>Booki</h4>
+            <p>Front-end</p>
+          </div>
+          <div class="project-details">
+            <p>
+              Développement et intégration de l'interface front-end d'un site de
+              location d’hébergements. Réalisé à partir d'une maquette Figma.
+              Application entièrement responsive.
+            </p>
+
+            <a href="#">Consulter le code</a>
+          </div>
+        </div>
+      </article>
+      <article>
+        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
+        <div class="project-block">
+          <div class="project-title">
+            <h4>Kasa</h4>
+            <p>Front-end</p>
+          </div>
+          <div class="project-details">
+            <p>
+              Développement front-end d'un site de location d’hébergement en
+              technologie React. Création des composants, des routes, étude et
+              découpage des maquettes Figma. Application entièrement responsive.
+            </p>
+
+            <a href="#">Consulter le code</a>
+          </div>
+        </div>
+      </article>
+      <article>
+        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
+        <div class="project-block">
+          <div class="project-title">
+            <h4>Mon vieux grimoire</h4>
+            <p>Back-end</p>
+          </div>
+          <div class="project-details">
+            <p>
+              Développement back-end d'un site de notation de livres en
+              technologie Express JS et MongoDB. Création des middlewares, des
+              controlleurs et routes.
+            </p>
+
+            <a href="#">Consulter le code</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <section class="contact" id="contact">
       <h3>Contact</h3>
       <p>
-        Une question ? N'hesitez pas à m'écrire ! Je voux repondrais en moins de
+        Une question ? N'hesitez pas à m'écrire ! Je vous repondrais en moins de
         24h. À très bientôt !
       </p>
       <i class="fa-regular fa-envelope"></i>
