@@ -17,10 +17,12 @@
     <header>
       <span>Rémy Grangenois</span>
       <nav>
-        <a href="#presentation">Présentation</a>
-        <a href="#skills">Compétences</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <ul>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -92,8 +94,9 @@
 
     <section class="portfolio" id="portfolio">
       <h3>Portfolio</h3>
+
       <article>
-        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
+        <img src="./assets/images/booki-responsive.png" alt="projet" />
         <div class="project-block">
           <div class="project-title">
             <h4>Booki</h4>
@@ -106,7 +109,13 @@
               Application entièrement responsive.
             </p>
 
-            <a href="#">Consulter le code</a>
+            <a
+              href="http://github.com/R-GRAN/OpenClassrooms_projet_2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consulter le code</a
+            >
           </div>
         </div>
       </article>
@@ -138,8 +147,9 @@
           <div class="project-details">
             <p>
               Développement back-end d'un site de notation de livres en
-              technologie Express JS et MongoDB. Création des middlewares, des
-              controlleurs et routes.
+              technologie Express JS et MongoDB. Développement d'une API et
+              connexion à MongoDB, création d'un système d'authentification
+              sécurisé avec des mots de passe hashés et des jetons.
             </p>
 
             <a href="#">Consulter le code</a>

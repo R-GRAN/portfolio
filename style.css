@@ -14,12 +14,20 @@ header {
   background-color: rgba(255, 255, 255, 0.78);
   z-index: 999;
   padding: 10px;
+  backdrop-filter: blur(20px);
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
   width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3{
+  font-size: 2rem;
 }
 
 a {
@@ -40,6 +48,7 @@ li {
   width: 100%;
   min-height: 80vh;
   position: relative;
+  background-color: black;
 }
 
 .banner-background {
@@ -82,9 +91,8 @@ li {
 }
 
 .skills {
-  height: 150px;
   color: white;
-  background: linear-gradient(to right, #3527ff9b, #b54ef9, #24d3fb);
+  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
 }
 
 .skills-lists {
@@ -98,10 +106,12 @@ section {
 }
 
 article img {
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 300px;
   object-fit: cover;
   margin: 20px 0;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 
 .project-block {
@@ -111,7 +121,7 @@ article img {
   color: white;
   text-align: center;
   align-items: center;
-  background: linear-gradient(to right, #3527ff9b, #b54ef9, #24d3fb);
+  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
 }
 
 .project-title {
@@ -124,5 +134,5 @@ footer {
   justify-content: center;
   text-align: center;
   height: 100px;
-  background: linear-gradient(to right, #3527ff9b, #b54ef9, #24d3fb);
+  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
 }
