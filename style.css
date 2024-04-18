@@ -26,8 +26,9 @@ nav ul {
   justify-content: space-around;
 }
 
-h3{
+h3 {
   font-size: 2rem;
+  margin: 3rem;
 }
 
 a {
@@ -44,6 +45,21 @@ li {
   list-style: none;
 }
 
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
+}
+
+/* Banner */
 .banner {
   width: 100%;
   min-height: 80vh;
@@ -68,13 +84,14 @@ li {
 }
 
 .banner-introduction h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   margin-bottom: 1rem;
 }
 .banner-introduction p {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
+/* presentation */
 .presentation-details {
   display: flex;
   padding-top: 10px;
@@ -90,6 +107,7 @@ li {
   margin: 20px;
 }
 
+/* Competences */
 .skills {
   color: white;
   background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
@@ -97,13 +115,50 @@ li {
 
 .skills-lists {
   display: flex;
-  justify-content: space-around;
+  margin-top: 10px;
+  justify-content: space-evenly;
 }
 
-section {
-  padding: 100px 0;
-  text-align: center;
+.skills-lists article {
+  height: 250px;
+  width: 250px;
 }
+
+.skill-title {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.skill-title i {
+  font-size: 3rem;
+  margin: 15px;
+}
+
+.skill-title i {
+  font-size: 3rem;
+}
+
+.skill-details {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* projet */
 
 article img {
   height: auto;
@@ -128,11 +183,55 @@ article img {
   width: 40%;
 }
 
-footer {
-  color: white;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100px;
-  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
+article:hover .skill-details {
+  opacity: 1;
+}
+
+@media (max-width: 810px) {
+  header {
+    display: none;
+  }
+
+  /* Banner */
+
+  .banner img {
+    height: 80%;
+  }
+  .banner-introduction h1 {
+    font-size: 3rem;
+  }
+  .banner-introduction p {
+    font-size: 1.5rem;
+  }
+
+  /* Presentation */
+  .presentation-details {
+    flex-direction: column;
+  }
+
+  .presentation-details img {
+    width: 250px;
+    align-self: center;
+  }
+
+  .skills-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .skills-lists article {
+    height: 150px;
+    width: 150px;
+  }
+
+  .skill-title {
+    height: 150px;
+    width: 150px;
+  }
+
+  .skill-title i {
+    font-size: 2rem;
+  }
 }
