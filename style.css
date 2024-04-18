@@ -134,6 +134,10 @@ footer {
   border-radius: 10px;
 }
 
+.skill-details {
+  cursor: default;
+}
+
 .skill-title i {
   font-size: 3rem;
   margin: 15px;
@@ -194,9 +198,6 @@ article:hover .skill-details {
 
   /* Banner */
 
-  .banner img {
-    height: 80%;
-  }
   .banner-introduction h1 {
     font-size: 3rem;
   }
