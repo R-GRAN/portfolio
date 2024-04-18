@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rémy Grangenois | Portfolio - Développeur Web</title>
+    <title>Rémy Grangenois - Portfolio</title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -11,13 +11,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script type="module" src="./assets/js/app.js" defer></script>
   </head>
   <body>
     <header>
       <span>Rémy Grangenois</span>
+      <button class="btn-menu" aria-label="menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
       <nav>
-        <ul>
+        <ul class="header-menu">
           <li><a href="#presentation">Présentation</a></li>
           <li><a href="#skills">Compétences</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -34,7 +38,7 @@
       />
       <div class="banner-introduction">
         <h1>Hello, je suis Rémy</h1>
-        <p>Web Devellopeur Junior</p>
+        <p>Développeur Web Junior</p>
       </div>
     </div>
 
@@ -104,7 +108,7 @@
       </div>
     </section>
 
-<!--     <section class="portfolio" id="portfolio">
+    <!--     <section class="portfolio" id="portfolio">
       <h3>Portfolio</h3>
 
       <article>
