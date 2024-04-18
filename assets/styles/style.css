@@ -140,17 +140,9 @@ header button {
   border-radius: 10px;
 }
 
-.skill-details {
-  cursor: default;
-}
-
 .skill-title i {
   font-size: 3rem;
   margin: 15px;
-}
-
-.skill-title i {
-  font-size: 3rem;
 }
 
 .skill-details {
@@ -166,6 +158,7 @@ header button {
   color: black;
   opacity: 0;
   transition: 0.4s;
+  cursor: default;
 }
 
 /* projet */
@@ -253,6 +246,7 @@ article:hover .skill-details {
     align-self: center;
   }
 
+  /* skills */
   .skills-lists {
     display: flex;
     flex-direction: column;
@@ -272,5 +266,9 @@ article:hover .skill-details {
 
   .skill-title i {
     font-size: 2rem;
+  }
+
+  article:active .skill-details {
+    opacity: 1;
   }
 }
