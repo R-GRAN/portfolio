@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -54,9 +58,9 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   height: 100px;
-  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
+  background: linear-gradient(to right, #150322, #200432, #1a054c, #2a002d);
 }
 
 /* Header */
@@ -161,38 +165,62 @@ header button {
   cursor: default;
 }
 
-/* projet */
-
-article img {
-  height: auto;
-  width: 300px;
-  object-fit: cover;
-  margin: 20px 0;
-  border-radius: 25px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-}
-
-.project-block {
-  height: 200px;
-  padding: 0 40px;
-  display: flex;
-  color: white;
-  text-align: center;
-  align-items: center;
-  background: linear-gradient(to right, #220636, #3c075f, #250371, #54015a);
-}
-
-.project-title {
-  width: 40%;
+.skill-details li {
+  margin-block: 10px;
 }
 
 article:hover .skill-details {
   opacity: 1;
 }
 
-@media (max-width: 810px) {
+/* projet */
+
+h4 {
+  font-size: 1.4rem;
+}
+
+.portfolio article {
+  display: flex;
+  padding: 40px;
+  margin: 0 40px;
+  height: 40vh;
+  gap: 40px;
+  background-color: rgb(237, 235, 235);
+}
+
+.light-reverse {
+  background-color: white !important;
+  flex-direction: row-reverse;
+}
+
+.project-img-container {
+  height: 100%;
+}
+
+article img {
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.project-block {
+  text-align: left;
+}
+
+.project-block p {
+  margin-block: 15px;
+}
+
+.project-block a {
+}
+
+@media screen and (max-width: 425px) {
   header {
     height: 50px;
+  }
+
+  h3 {
+    margin: 2rem;
   }
 
   header span {
@@ -207,6 +235,8 @@ article:hover .skill-details {
     top: 50%;
     left: 5%;
     z-index: 999;
+    color: black;
+    transform: scale(1.5);
   }
 
   .header-menu {
@@ -239,6 +269,7 @@ article:hover .skill-details {
   /* Presentation */
   .presentation-details {
     flex-direction: column;
+    margin: 0;
   }
 
   .presentation-details img {
@@ -270,5 +301,74 @@ article:hover .skill-details {
 
   article:active .skill-details {
     opacity: 1;
+  }
+
+  /* portfolio */
+
+  .project-img-container {
+    height: auto;
+  }
+
+  .portfolio article {
+    display: block;
+    margin: 0 10px;
+    padding: 15px;
+    height: auto;
+  }
+
+  .portfolio article img {
+    margin: 15px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 780px) {
+  header nav {
+    width: 80%;
+  }
+
+  .banner-introduction h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-introduction p {
+    font-size: 1.75rem;
+  }
+
+  .presentation-details {
+    margin: 0 20px;
+    align-items: center;
+  }
+
+  .presentation-details img {
+    height: 175px;
+    width: 175px;
+  }
+
+  .skills-lists article {
+    height: 125px;
+    width: 125px;
+  }
+
+  .skill-title {
+    height: 125px;
+    width: 125px;
+  }
+
+  .skill-details li {
+    margin-block: 5px;
+    font-size: 14px;
+  }
+
+  .portfolio article {
+    height: auto;
+    margin: 0 20px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  article img {
+    height: 150px;
   }
 }
