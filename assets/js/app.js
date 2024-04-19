@@ -1,6 +1,6 @@
 const menu = document.querySelector(".header-menu");
-const btn = document.querySelector(".btn-menu");
-const icon = document.querySelector(".btn-menu i");
+const btn = document.querySelector(".header-btn-sm-menu");
+const icon = document.querySelector(".header-btn-sm-menu i");
 
 btn.addEventListener("click", () => openMenu());
 
@@ -13,4 +13,4 @@ function openMenu() {
     icon.classList.remove("fa-xmark");
     icon.classList.add("fa-bars");
   }
-};
+}

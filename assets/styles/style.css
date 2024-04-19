@@ -8,7 +8,32 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+h3 {
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Header */
+
+.header-style {
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -21,58 +46,23 @@ header {
   backdrop-filter: blur(20px);
 }
 
-nav {
+.header-nav {
   width: 50%;
 }
 
-nav ul {
+.header-menu {
   display: flex;
   justify-content: space-around;
 }
 
-h3 {
-  font-size: 2rem;
-  margin: 3rem;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-section {
-  padding: 30px 0;
-  text-align: center;
-}
-
-footer {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background: linear-gradient(to right, #150322, #200432, #1a054c, #2a002d);
-}
-
-/* Header */
-
-header button {
+.header-btn-sm-menu {
   display: none;
 }
 
 /* Banner */
 .banner {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   background-color: black;
 }
@@ -93,11 +83,11 @@ header button {
   color: white;
 }
 
-.banner-introduction h1 {
-  font-size: 8rem;
+.banner-title {
+  font-size: 6rem;
   margin-bottom: 1rem;
 }
-.banner-introduction h2 {
+.banner-subtitle {
   font-size: 3.5rem;
 }
 
@@ -108,11 +98,11 @@ header button {
   margin: 0 40px;
 }
 
-.presentation-details img {
+.presentation-img {
   width: 300px;
 }
 
-.presentation-details p {
+.presentation-text {
   align-self: center;
   margin: 20px;
 }
@@ -129,7 +119,7 @@ header button {
   justify-content: space-evenly;
 }
 
-.skills-lists article {
+.skills-article {
   height: 250px;
   width: 250px;
 }
@@ -144,7 +134,7 @@ header button {
   border-radius: 10px;
 }
 
-.skill-title i {
+.skills-icon {
   font-size: 3rem;
   margin: 15px;
 }
@@ -169,17 +159,13 @@ header button {
   margin-block: 10px;
 }
 
-article:hover .skill-details {
+.skills-article:hover .skill-details {
   opacity: 1;
 }
 
 /* projet */
 
-h4 {
-  font-size: 1.4rem;
-}
-
-.portfolio article {
+.project {
   display: flex;
   padding: 40px;
   margin: 0 40px;
@@ -197,7 +183,7 @@ h4 {
   height: 100%;
 }
 
-article img {
+.project-img {
   height: 100%;
   border-radius: 5px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
@@ -238,8 +224,72 @@ textarea {
   transform: scale(1.5);
 }
 
+/* Footer */
+
+.footer-style {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(to right, #150322, #200432, #1a054c, #2a002d);
+}
+
+/* Responsive Tablette */
+@media screen and (min-width: 426px) and (max-width: 780px) {
+  .header-nav {
+    width: 80%;
+  }
+
+  .banner-title {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .presentation-details {
+    margin: 0 20px;
+    align-items: center;
+  }
+
+  .presentation-img {
+    height: 175px;
+    width: 175px;
+  }
+
+  .skills-article {
+    height: 125px;
+    width: 125px;
+  }
+
+  .skill-title {
+    height: 125px;
+    width: 125px;
+  }
+
+  .skill-details li {
+    margin-block: 5px;
+    font-size: 14px;
+  }
+
+  .project {
+    height: auto;
+    margin: 0 20px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+}
+
+/* Responsive Mobile */
 @media screen and (max-width: 425px) {
-  header {
+  .header-style {
     height: 50px;
   }
 
@@ -251,7 +301,7 @@ textarea {
     display: none;
   }
 
-  header button {
+  .header-btn-sm-menu {
     display: block;
     border: none;
     background-color: transparent;
@@ -283,10 +333,10 @@ textarea {
 
   /* Banner */
 
-  .banner-introduction h1 {
+  .banner-title {
     font-size: 3rem;
   }
-  .banner-introduction h2 {
+  .banner-subtitle {
     font-size: 1.5rem;
   }
 
@@ -296,7 +346,7 @@ textarea {
     margin: 0;
   }
 
-  .presentation-details img {
+  .presentation-img {
     width: 250px;
     align-self: center;
   }
@@ -309,7 +359,7 @@ textarea {
     gap: 15px;
   }
 
-  .skills-lists article {
+  .skills-article {
     height: 150px;
     width: 150px;
   }
@@ -319,11 +369,11 @@ textarea {
     width: 150px;
   }
 
-  .skill-title i {
+  .skills-icon {
     font-size: 2rem;
   }
 
-  article:active .skill-details {
+  .skills-article:active .skill-details {
     opacity: 1;
   }
 
@@ -333,66 +383,15 @@ textarea {
     height: auto;
   }
 
-  .portfolio article {
+  .project {
     display: block;
     margin: 0 10px;
     padding: 15px;
     height: auto;
   }
 
-  .portfolio article img {
+  .project-img {
     margin: 15px;
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 780px) {
-  header nav {
-    width: 80%;
-  }
-
-  .banner-introduction h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .banner-introduction h2 {
-    font-size: 1.75rem;
-  }
-
-  .presentation-details {
-    margin: 0 20px;
-    align-items: center;
-  }
-
-  .presentation-details img {
-    height: 175px;
-    width: 175px;
-  }
-
-  .skills-lists article {
-    height: 125px;
-    width: 125px;
-  }
-
-  .skill-title {
-    height: 125px;
-    width: 125px;
-  }
-
-  .skill-details li {
-    margin-block: 5px;
-    font-size: 14px;
-  }
-
-  .portfolio article {
-    height: auto;
-    margin: 0 20px;
-    padding: 20px;
-    align-items: center;
-  }
-
-  article img {
     height: 150px;
   }
 }

@@ -128,12 +128,12 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body>
-    <header>
+    <header class="header-style">
       <span>Rémy Grangenois</span>
-      <button class="btn-menu" aria-label="menu">
+      <button class="header-btn-sm-menu" aria-label="menu">
         <i class="fa-solid fa-bars"></i>
       </button>
-      <nav>
+      <nav class="header-nav">
         <ul class="header-menu">
           <li><a href="#presentation">Présentation</a></li>
           <li><a href="#skills">Compétences</a></li>
@@ -150,16 +150,20 @@
         class="banner-background"
       />
       <div class="banner-introduction">
-        <h1>Hello, je suis Rémy</h1>
-        <h2>Développeur Web Junior</h2>
+        <h1 class="banner-title">Hello, je suis Rémy</h1>
+        <h2 class="banner-subtitle">Développeur Web Junior</h2>
       </div>
     </div>
 
     <section id="presentation">
       <h3>Qui suis-je ?</h3>
       <div class="presentation-details">
-        <img src="./assets/images/emoji.webp" alt="dessin représentant Rémy" />
-        <p>
+        <img
+          class="presentation-img"
+          src="./assets/images/emoji.webp"
+          alt="dessin représentant Rémy"
+        />
+        <p class="presentation-text">
           "Suite à mon désir de reconversion dans le monde du développement web
           puis à sa concrétisation en me formant grâce à OpenClassrooms, j'ai pu
           acquérir de nombreuses compétences que je souhaite désormais exploiter
@@ -175,9 +179,9 @@
     <section class="skills" id="skills">
       <h3>Mes compétences</h3>
       <div class="skills-lists">
-        <article>
+        <article class="skills-article">
           <div class="skill-title">
-            <i class="fa-solid fa-display"></i>
+            <i class="skills-icon fa-solid fa-display"></i>
             <h4>Front-end</h4>
           </div>
           <div class="skill-details">
@@ -189,9 +193,9 @@
             </ul>
           </div>
         </article>
-        <article>
+        <article class="skills-article">
           <div class="skill-title">
-            <i class="fa-solid fa-server"></i>
+            <i class="skills-icon fa-solid fa-server"></i>
             <h4>Back-end</h4>
           </div>
 
@@ -203,9 +207,9 @@
             </ul>
           </div>
         </article>
-        <article>
+        <article class="skills-article">
           <div class="skill-title">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <i class="skills-icon fa-solid fa-screwdriver-wrench"></i>
             <h4>Outils</h4>
           </div>
           <div class="skill-details">
@@ -223,9 +227,13 @@
 
     <section class="portfolio" id="portfolio">
       <h3>Portfolio</h3>
-      <article>
+      <article class="project">
         <div class="project-img-container">
-          <img src="./assets/images/booki.webp" alt="projet du projet Booki" />
+          <img
+            class="project-img"
+            src="./assets/images/booki.webp"
+            alt="projet du projet Booki"
+          />
         </div>
 
         <div class="project-block">
@@ -246,9 +254,13 @@
           >
         </div>
       </article>
-      <article class="light-reverse">
+      <article class="project light-reverse">
         <div class="project-img-container">
-          <img src="./assets/images/kasa.webp" alt="visuel du projet kasa" />
+          <img
+            class="project-img"
+            src="./assets/images/kasa.webp"
+            alt="visuel du projet kasa"
+          />
         </div>
 
         <div class="project-block">
@@ -269,9 +281,10 @@
           >
         </div>
       </article>
-      <article>
+      <article class="project">
         <div class="project-img-container">
           <img
+            class="project-img"
             src="./assets/images/mon-vieux-grimoire.webp"
             alt="visuel du projet"
           />
@@ -357,7 +370,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="footer-style">
       <p>© 2024 - Rémy GRANGENOIS</p>
     </footer>
   </body>
