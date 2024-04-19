@@ -97,7 +97,7 @@ header button {
   font-size: 8rem;
   margin-bottom: 1rem;
 }
-.banner-introduction p {
+.banner-introduction h2 {
   font-size: 3.5rem;
 }
 
@@ -262,7 +262,7 @@ article img {
   .banner-introduction h1 {
     font-size: 3rem;
   }
-  .banner-introduction p {
+  .banner-introduction h2 {
     font-size: 1.5rem;
   }
 
@@ -332,7 +332,7 @@ article img {
     margin-bottom: 0.5rem;
   }
 
-  .banner-introduction p {
+  .banner-introduction h2 {
     font-size: 1.75rem;
   }
 
