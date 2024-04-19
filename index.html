@@ -76,7 +76,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon  -->
+
     <link rel="icon" href="/assets/images/laptop.png" type="image/x-icon" />
+
+    <!-- Font Awesome  -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -84,8 +89,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Style CSS -->
+
     <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- Script JS  -->
+
     <script src="./assets/js/app.js" defer></script>
+
+    <!-- Script EmailJS  -->
 
     <script
       type="text/javascript"
@@ -109,6 +122,8 @@
             emailjs.sendForm("service_eglvmy9", "template_c910cat", this).then(
               () => {
                 alert("Votre message a bien été envoyé !");
+                document.getElementById("contact-form").reset();
+
                 console.log("SUCCESS!");
               },
               (error) => {
@@ -187,9 +202,9 @@
           <div class="skill-details">
             <ul>
               <li>Html5</li>
-              <li>Css</li>
+              <li>CSS / Sass</li>
+              <li>JavaScript</li>
               <li>React</li>
-              <li>Sass</li>
             </ul>
           </div>
         </article>
@@ -357,16 +372,19 @@
       </div>
 
       <div class="contact-info">
-        <a href="mailto:remy.grangenois@gmail.com">
-          <i class="fa-regular fa-envelope"></i>
-          remy.grangenois@gmail.com</a
-        >
-
-        <a
-          href="https://www.google.com/maps/place/Cath%C3%A9drale+Notre-Dame+de+Strasbourg/@48.5817252,7.7480253,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c85253398843:0xe7152777f55e2738!8m2!3d48.5817217!4d7.7505949!16zL20vMDRqNjc2?entry=ttu"
-        >
-          <i class="fa-solid fa-location-dot"></i>67000 Strasbourg
-        </a>
+        <div>
+          <a href="mailto:remy.grangenois@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            remy.grangenois@gmail.com</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://www.google.com/maps/place/Cath%C3%A9drale+Notre-Dame+de+Strasbourg/@48.5817252,7.7480253,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c85253398843:0xe7152777f55e2738!8m2!3d48.5817217!4d7.7505949!16zL20vMDRqNjc2?entry=ttu"
+          >
+            <i class="fa-solid fa-location-dot"></i>67000 Strasbourg
+          </a>
+        </div>
       </div>
     </section>
 
