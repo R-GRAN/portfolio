@@ -72,7 +72,7 @@ header button {
 /* Banner */
 .banner {
   width: 100%;
-  min-height: 80vh;
+  height: 80vh;
   position: relative;
   background-color: black;
 }
@@ -211,7 +211,21 @@ article img {
   margin-block: 15px;
 }
 
-.project-block a {
+/* Contact */
+
+.contact-info {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.contact-info a {
+  margin-top: 5px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 425px) {
