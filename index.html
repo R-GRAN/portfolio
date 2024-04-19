@@ -1,8 +1,80 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Script Schema.org / Google Richsnippet -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Grangenois Rémy",
+        "image": "https://r-gran.github.io/portfolio/assets/images/mac_open.webp",
+        "@id": "",
+        "url": "https://r-gran.github.io/portfolio/",
+        "telephone": "0612345678",
+        "priceRange": "0€ - 250 €",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Place de la Cathédrale",
+          "addressLocality": "Strasbourg",
+          "postalCode": "67000",
+          "addressCountry": "FR"
+        },
+        "sameAs": "https://github.com/R-GRAN/"
+      }
+    </script>
+
+    <!-- Balises meta Open Graph'business' pour les informations sur l'entreprise -->
+
+    <meta
+      property="business:contact_data:street_address"
+      content="Place de la Cathédrale"
+    />
+    <meta property="business:contact_data:locality" content="Strasbourg" />
+    <meta property="business:contact_data:postal_code" content="67000" />
+    <meta property="business:contact_data:country_name" content="France" />
+    <meta property="business:contact_data:phone_number" content="0612345678" />
+    <meta
+      property="business:contact_data:website"
+      content="https://r-gran.github.io/portfolio/"
+    />
+
+    <!-- Balises meta Open Graph 'website' pour les informations sur la page pour les reseaux sociaux -->
+
+    <meta
+      property="og:title"
+      content="Rémy Grangenois | Développeur Web à Strasbourg"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez Rémy Grangenois à Strasbourg, développeur web Junior passionné. En front-end et back-end, je crée des expériences web exceptionnelles avec HTML, CSS, JavaScript, React et Node.js. Explorez mes projets variés pour une vision inspirante du web."
+    />
+    <meta property="og:url" content="https://r-gran.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://r-gran.github.io/portfolio/assets/images/mac_open.webp"
+    />
+
+    <!-- Balises meta Twitter / X  -->
+
+    <meta
+      name="twitter:title"
+      content="Rémy Grangenois | Développeur Web à Strasbourg"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez Rémy Grangenois à Strasbourg, développeur web Junior passionné. En front-end et back-end, je crée des expériences web exceptionnelles avec HTML, CSS, JavaScript, React et Node.js. Explorez mes projets variés pour une vision inspirante du web."
+    />
+    <meta name="twitter:url" content="https://r-gran.github.io/portfolio/" />
+    <meta
+      name="twitter:image"
+      content="https://r-gran.github.io/portfolio/assets/images/mac_open.webp"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rémy Grangenois - Portfolio</title>
+
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -13,6 +85,14 @@
     />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <script type="module" src="./assets/js/app.js" defer></script>
+
+    <!-- SEO -->
+    <title>Rémy Grangenois - Développeur Web à Strasbourg</title>
+    <meta
+      name="description"
+      content="Découvrez Rémy Grangenois à Strasbourg, développeur web Junior passionné. En front-end et back-end, je crée des expériences web exceptionnelles avec HTML, CSS, JavaScript, React et Node.js. Explorez mes projets variés pour une vision inspirante du web."
+    />
+    <meta name="robots" content="index, follow" />
   </head>
   <body>
     <header>
@@ -32,7 +112,7 @@
 
     <div class="banner">
       <img
-        src="./assets/images/mac_open.jpg"
+        src="./assets/images/mac_open.webp"
         alt="bannière"
         class="banner-background"
       />
@@ -107,72 +187,6 @@
         </article>
       </div>
     </section>
-
-    <!--       <section class="portfolio" id="portfolio">
-      <h3>Portfolio</h3>
-
-      <article>
-        <img src="./assets/images/booki-responsive.png" alt="projet" />
-        <div class="project-block">
-          <div class="project-title">
-            <h4>Booki</h4>
-            <p>Front-end</p>
-          </div>
-          <div class="project-details">
-            <p>
-              Développement et intégration de l'interface front-end d'un site de
-              location d’hébergements. Réalisé à partir d'une maquette Figma.
-              Application entièrement responsive.
-            </p>
-
-            <a
-              href="http://github.com/R-GRAN/OpenClassrooms_projet_2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Consulter le code</a
-            >
-          </div>
-        </div>
-      </article>
-      <article>
-        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
-        <div class="project-block">
-          <div class="project-title">
-            <h4>Kasa</h4>
-            <p>Front-end</p>
-          </div>
-          <div class="project-details">
-            <p>
-              Développement front-end d'un site de location d’hébergement en
-              technologie React. Création des composants, des routes, étude et
-              découpage des maquettes Figma. Application entièrement responsive.
-            </p>
-
-            <a href="#">Consulter le code</a>
-          </div>
-        </div>
-      </article>
-      <article>
-        <img src="./assets/images/projet-viewer.jpeg" alt="projet" />
-        <div class="project-block">
-          <div class="project-title">
-            <h4>Mon vieux grimoire</h4>
-            <p>Back-end</p>
-          </div>
-          <div class="project-details">
-            <p>
-              Développement back-end d'un site de notation de livres en
-              technologie Express JS et MongoDB. Développement d'une API et
-              connexion à MongoDB, création d'un système d'authentification
-              sécurisé avec des mots de passe hashés et des jetons.
-            </p>
-
-            <a href="#">Consulter le code</a>
-          </div>
-        </div>
-      </article>
-    </section> -->
 
     <section class="portfolio" id="portfolio">
       <h3>Portfolio</h3>
