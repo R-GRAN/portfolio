@@ -13,4 +13,4 @@ function openMenu() {
     icon.classList.remove("fa-xmark");
     icon.classList.add("fa-bars");
   }
-}
+};

@@ -213,6 +213,16 @@ article img {
 
 /* Contact */
 
+.form-container {
+  margin-block: 30px;
+}
+
+input,
+textarea {
+  margin: 12px 0;
+  padding: 12px;
+}
+
 .contact-info {
   display: flex;
   gap: 15px;
